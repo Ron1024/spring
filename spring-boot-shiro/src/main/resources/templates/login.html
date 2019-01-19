@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+
+    <link rel="stylesheet" type="text/css" th:href="@{css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{css/app/signin.css}" type="text/css">
+</head>
+<body class="text-center">
+<form class="form-signin" onsubmit="return false" action="##">
+    <img class="mb-4" th:src="@{img/bootstrap-stack.png}" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">请登录</h1>
+    <label for="inputText" class="sr-only">用户名</label>
+    <input type="text" id="inputText" class="form-control" placeholder="用户名" required autofocus>
+    <label for="inputPassword" class="sr-only">密码</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" value="remember-me"> 记住我
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block"  onclick="login()" >登陆</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+</form>
+<script type="application/javascript" th:src="@{js/jquery.min.js}"></script>
+<script th:src="@{js/plugins/popper/popper.min.js}" type="application/javascript"></script>
+<script th:src="@{js/bootstrap.min.js}" type="application/javascript"></script>
+<script type="application/javascript" th:src="@{js/app/login.js}"></script>
+</body>
+</html>

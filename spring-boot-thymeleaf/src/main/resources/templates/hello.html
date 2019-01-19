@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/signin.css}">
+</head>
+<body>
+
+<!--/*@thymesVar id="name" type="java.lang.String""*/-->
+<p th:text="'Hello ,'+ ${name} +'!'"/>
+<!--/*@thymesVar id="age" type="java.lang.String""*/-->
+<p th:text="'年龄:'+${age}"/>
+</body>
+</html>
